@@ -137,9 +137,9 @@ for($n = 0; $n<=$cword;$n++){
 
 if($k == ($cword + 1) and $_SESSION["erreur"]<6){
     echo '<div class="divvic"><h1>VICTOIRE!!!</h1>';
-
-     echo '<form method ="post" action="">   
-            <input type="submit" value="nouvelle partie" name="newgame" class="memory"> </input>
+    echo"<img src='hangman/hangman8.gif'>";
+    echo '<form method ="post" action="">
+          <input type="submit" value="nouvelle partie" name="newgame" class="memory"> </input>
         </form></div> ';
     echo '<style> #letter{ pointer-events:none; }</style> ';
 
