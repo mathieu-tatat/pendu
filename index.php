@@ -137,6 +137,7 @@ for($n = 0; $n<=$cword;$n++){
 
 if($k == ($cword + 1) and $_SESSION["erreur"]<6){
     echo '<div class="divvic"><h1>VICTOIRE!!!</h1>';
+
      echo '<form method ="post" action="">   
             <input type="submit" value="nouvelle partie" name="newgame" class="memory"> </input>
         </form></div> ';
@@ -160,34 +161,34 @@ if(isset($_POST['letter'])){
    
         <?php 
         if($_SESSION['erreur']==0){
-            echo"<img src='hangman/hangman-0.png'>";}
+            echo"<img src='hangman/hangman0.gif'>";}
 
         if($_SESSION['erreur']==1){
-            echo "<img src='hangman/hangman-1.png'>";}
+            echo "<img src='hangman/hangman1.gif'>";}
             ?>
         <div class="tronc"> 
             <div class="one">
             <?php 
         if($_SESSION['erreur']==2 ){
-            echo "<img src='hangman/hangman-2.png'>";}
+            echo "<img src='hangman/hangman2.gif'>";}
             ?>            </div> 
             <div class="two">
             <?php 
         if($_SESSION['erreur']==3){
-            echo "<img src='hangman/hangman-3.png'>";}
+            echo "<img src='hangman/hangman3.gif'>";}
             ?>            </div> 
             <div class="three">
             <?php 
         if($_SESSION['erreur']==4){
-            echo "<img src='hangman/hangman-4.png'>";}
+            echo "<img src='hangman/hangman4.gif'>";}
             ?>            </div> 
         </div>
         <div class="legs">         
         <?php 
         if($_SESSION['erreur']==5){
-            echo "<img src='hangman/hangman-5.png'>";}
+            echo "<img src='hangman/hangman5.gif'>";}
         if($_SESSION['erreur']==6){
-            echo "<img src='hangman/hangman-6.png'>";}
+            echo "<img src='hangman/hangman7.gif'>";}
             ?>        
         </div>
     </div>
